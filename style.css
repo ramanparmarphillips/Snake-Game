@@ -10,6 +10,7 @@ body {
     justify-content: center;
     height: 100vh;
     background: rgb(204, 207, 230);
+    height: webkit-fill-available;
 }
 
 .wrapper {
@@ -65,7 +66,8 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
+        
     }
 
     .wrapper {

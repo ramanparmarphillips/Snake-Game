@@ -115,6 +115,7 @@ const initGame = () => {
         changeFoodPosition()
         snakeBody.push([foodX, foodY])
         score++
+        timer -= 100
         highScore = score >= highScore ? score : highScore
         localStorage.setItem('high-score', highScore)
         scoreElement.innerHTML = `Score: ${score}`
@@ -144,6 +145,8 @@ const initGame = () => {
     playBoard.innerHTML = htmlMarkup
 }
 
+let timer = 125
+
 changeFoodPosition()
-setIntervalId = setInterval(initGame, 125)
+setIntervalId = setInterval(initGame, timer)
 document.addEventListener('keydown', changeDirection)
