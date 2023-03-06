@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     background: rgb(204, 207, 230);
 }
 
@@ -64,6 +64,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .wrapper {
         width: 90vmin;
         height: 115vmin;
