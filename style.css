@@ -38,6 +38,7 @@ body {
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
     background: rgb(20, 26, 66);
+    touch-action: manipulation;
 }
 
 .play-board .food {
