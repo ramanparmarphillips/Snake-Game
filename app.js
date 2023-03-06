@@ -63,6 +63,7 @@ function handleTouchMove(event) {
       velocityX = 0;
       velocityY = 1;
     }
+    event.preventDefault();
   }
 
   // Reset swipe tracking variables
