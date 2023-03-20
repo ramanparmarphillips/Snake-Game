@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/5931611d04.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Snake Game</title>
+    <link rel="shortcut icon" href="snake.png" type="image/x-icon">
 </head>
 <body>
-    
+    <h1>Swipe up, left, right or down to move the Snake!</h1>
     <div class="wrapper">
         <div class="game-details">
             <span class="score">Score:</span>
@@ -18,16 +19,12 @@
         </div>
         <div class="play-board"></div>
         <div class="controls">
-            <div class="leftside">
-                <i data-key="ArrowLeft" id="left" class="fa-solid fa-arrow-left-long"></i>
-            </div>
-            <div class="middle">
-                <i data-key="ArrowUp" id="top" class="fa-solid fa-arrow-up-long"></i>
-                <i data-key="ArrowDown" id="bottom" class="fa-solid fa-arrow-down-long"></i>
-            </div>
-            <div class="rightside">
-                <i data-key="ArrowRight" id="right" class="fa-solid fa-arrow-right-long"></i>
-            </div>
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+            
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
         </div>
     </div>
 

@@ -77,6 +77,8 @@ function handleTouchMove(event) {
 const changeFoodPosition = () => {
     foodX = Math.floor(Math.random() * 30) + 1
     foodY = Math.floor(Math.random() * 30) + 1
+    timer-= 10
+    console.log(timer)
 }
 
 function handleGameOver() {
@@ -115,7 +117,6 @@ const initGame = () => {
         changeFoodPosition()
         snakeBody.push([foodX, foodY])
         score++
-        timer -= 100
         highScore = score >= highScore ? score : highScore
         localStorage.setItem('high-score', highScore)
         scoreElement.innerHTML = `Score: ${score}`
@@ -141,7 +142,6 @@ const initGame = () => {
             gameOver = true
         }
     }
-
     playBoard.innerHTML = htmlMarkup
 }
 
